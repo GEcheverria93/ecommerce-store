@@ -1,5 +1,12 @@
+html, body {
+  height: 100%;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header, footer {
@@ -18,3 +25,6 @@ nav ul li {
   margin: 0 10px;
 }
 
+.main-container {
+  flex: 1;
+}

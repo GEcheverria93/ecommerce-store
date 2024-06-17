@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -6,9 +7,9 @@ const Header = () => {
       <h1>My E-Commerce</h1>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>Cart</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/cart">Cart</Link></li>
         </ul>
       </nav>
     </header>
@@ -16,4 +17,3 @@ const Header = () => {
 };
 
 export default Header;
-

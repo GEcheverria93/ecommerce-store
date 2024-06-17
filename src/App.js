@@ -12,11 +12,13 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Routes>
+        <div className="main-container">
+         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
+        </div>
         <Footer />
       </div>
     </Router>
